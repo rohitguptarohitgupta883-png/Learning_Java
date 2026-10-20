@@ -6,6 +6,7 @@ public class Scan
         Scanner sc = new Scanner(System.in);
         int a =sc.nextInt();
         System.out.println("Your Body count is " + a);
+        sc.close();    
     } 
     
 }

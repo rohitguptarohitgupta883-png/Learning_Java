@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Practice
+public class PracticeFibo
 {
     public static void main(String[] args) {
         int a=0,b=1;
