@@ -5,7 +5,7 @@ public class Scan
     {
         Scanner sc = new Scanner(System.in);
         int a =sc.nextInt();
-        System.out.println("Your Body count is " + a);
+        System.out.println("Your num is " + a);
         sc.close();    
     } 
     

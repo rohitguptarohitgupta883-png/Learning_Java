@@ -6,7 +6,7 @@ public class Armstrong
         Scanner sc=new Scanner(System.in);
         System.out.println("enter your number");
         int n=sc.nextInt();
-        int n2=n,n3=n,n4=n,sum=0;
+        int n3=n,n4=n,sum=0;
         int k=0;
         while(n>0)
         {
@@ -25,5 +25,6 @@ public class Armstrong
         else
             System.out.println(" not Armstrong number");
     
+    sc.close();
     }
 }
