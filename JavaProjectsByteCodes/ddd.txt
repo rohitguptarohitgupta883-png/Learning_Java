@@ -1,0 +1,14 @@
+String s=sc.nextLine();
+                switch (s)
+                {
+                    case "CSE":
+                        System.out.println("Man Gamma");
+                        break;
+                    case "IT":
+                        System.out.println("Man Delta");
+                        break;
+                    case "ECE":
+                        System.out.println("Man Sigma");
+                        break;
+                    default :
+                        System.out.println("enter correct dept");*/
