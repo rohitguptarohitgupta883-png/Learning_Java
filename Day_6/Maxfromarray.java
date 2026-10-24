@@ -13,7 +13,8 @@ public class Maxfromarray {
         if (a[i]<min)
             min=a[i];
         }
-        System.out.println("Max= "+max +"MIN ="+min);
+        sc.close();
+        System.out.println("Max= "+max +" MIN ="+min);
     }
 
     
