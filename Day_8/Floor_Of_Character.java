@@ -31,7 +31,7 @@ public class Floor_Of_Character {
         System.out.println(Arrays.toString(arr));
          return arr;
      }
-     static void search(char[] arr)
+    static void search(char[] arr)
      {
         
         Scanner sc=new Scanner(System.in);
