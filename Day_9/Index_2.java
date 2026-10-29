@@ -1,7 +1,7 @@
 package Day_9;
 
 import java.util.*;
-
+//program to fin index of target in infinite array 
 public class Index_2 { 
    static void search(double[] arr)
     {
@@ -16,10 +16,10 @@ public class Index_2 {
         {
             start=end+1;
             end=Math.pow(10.0,i);
-        while(start<=end)
-        {
             double start1=start;
             double end1=end;
+        while(start1<=end1)
+        {
             mid=(double)((int)((start1+end1)/2));
             if(target<(arr[(int)mid]))
                 end1=mid-1;
