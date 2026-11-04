@@ -1,41 +1,35 @@
 package Day_13;
 
 import java.util.Arrays;
-
 public class Missing_Num {
-    public static void main(String[] args) {
-        int[] a = {6, 5, 3, 2, 1, 0};
-        int missing = search(a);
-        System.out.println("Sorted Array: " + Arrays.toString(a));
-        System.out.println("Missing Number: " + missing);
+     public static void main(String[] args) {
+        int a[]={4,0,2,1};
+        int l=a.length;
+    sort(a,l);
     }
-
-    static int search(int[] a) {
-        int i = 0;
-        int l = a.length;
-
-        // Step 1: Cyclic Sort
-        while (i < l) {
-            int correctIndex = a[i];
-            
-            // Check if element is within bounds and not already at its correct position
-            if (correctIndex < l && a[i] != a[correctIndex]) {
-                int temp = a[i];
-                a[i] = a[correctIndex];
-                a[correctIndex] = temp;
-            } else {
-                i++;
+    static void sort(int[] a,int l)
+    {
+        for(int i=0;i<l;i++)
+        {
+            if(a[i]!=i&&a[i]!=l)
+            {
+                swap(a,i,a[i]);
             }
         }
-
-        // Step 2: Search for the missing number
-        for (int index = 0; index < l; index++) {
-            if (a[index] != index) {
-                return index;
+        System.out.println(Arrays.toString(a));
+        for(int i=0;i<l;i++)
+        {
+            if(a[i]!=i)
+            {
+                System.out.println("missing num is "+i);
             }
         }
-
-        // If all numbers from 0 to n-1 are present, then n is the missing number
-        return l;
     }
+    static void swap(int[] a,int first,int second)
+    {
+        int temp=a[first];
+        a[first]=a[second];
+        a[second]=temp;
+    }
+ 
 }
