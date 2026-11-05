@@ -16,14 +16,14 @@ public class Missing_Num {
             {
                 if(k!=l&&a[k]!=l)
                     swap(a, i, k);
-                /*else if(a[k]==l)
+                else if(a[k]==l)
                 {
                     int temp=k;
                     a[i]=l;
                     a[temp]=temp;
                 }
                 else
-                    break;*/
+                    break;
             }
             
             
